@@ -1,0 +1,10 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics,beans
+logging:
+  level:
+      io:
+        netty: DEBUG
+      reactor: DEBUG

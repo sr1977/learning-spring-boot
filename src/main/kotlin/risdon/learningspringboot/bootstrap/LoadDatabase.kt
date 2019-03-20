@@ -11,7 +11,7 @@ import risdon.learningspringboot.repository.ChapterRepository
 class LoadDatabase {
 
     @Bean
-    fun commandLineRunner(repository: ChapterRepository) =  CommandLineRunner{
+    fun commandLineRunner(repository: ChapterRepository) =  CommandLineRunner {
         Flux.just(
                 Chapter(name = "Quick Start"),
                 Chapter(name = "Reactive programming"),
